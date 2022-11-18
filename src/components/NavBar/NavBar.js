@@ -60,7 +60,7 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/skills"
+                    to="/gallery"
                     className="nav-link pe-4"
                     aria-current="page"
                     activeclassname="active"
@@ -68,7 +68,7 @@ export default function NavBar() {
                       setHamShow(!HamShow);
                     }}
                   >
-                    Skills
+                    Gallery
                   </NavLink>
                 </li>
                 {/* <li className="nav-item">
@@ -86,7 +86,7 @@ export default function NavBar() {
                 </li> */}
                 <li className="nav-item">
                   <NavLink
-                    to="/portfolio"
+                    to="/events"
                     className="nav-link pe-4 "
                     aria-current="page"
                     activeclassname="active"
@@ -94,7 +94,20 @@ export default function NavBar() {
                       setHamShow(!HamShow);
                     }}
                   >
-                    Portfolio
+                    Events
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/organizers"
+                    className="nav-link pe-4"
+                    aria-current="page"
+                    activeclassname="active"
+                    onClick={() => {
+                      setHamShow(!HamShow);
+                    }}
+                  >
+                    Members
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -107,7 +120,7 @@ export default function NavBar() {
                       setHamShow(!HamShow);
                     }}
                   >
-                    Contact
+                    ReachUs
                   </NavLink>
                 </li>
               </ul>
