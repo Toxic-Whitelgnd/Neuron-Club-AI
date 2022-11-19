@@ -4,6 +4,8 @@ import { HashRouter as Router, Route, Routes, } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 
 import Contact from "./components/Contact/contact"
+import Home from './components/home/home';
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <div>
       <NavBar />
       <Routes>
+        <Route path='/' element ={<Home/>}/>
       {/* <Routes>
 
             
