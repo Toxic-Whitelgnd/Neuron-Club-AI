@@ -63,7 +63,7 @@ export default function Contact() {
         e.preventDefault();
 
         console.log('send emailjs');
-        emailjs.sendForm('service_d8ypxfs', 'template_xzi1ecs', form.current, 'FaIW_sH1b_l1x5lcS').
+        emailjs.sendForm('service_ux6xupy', 'template_zhrm20s', form.current, 'zgs1VdEclqZ180gxT').
         then((res)=>{
             console.log(res.text);
             window.alert("Your response has been sumbitted");

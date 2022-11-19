@@ -60,7 +60,7 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/gallery"
+                    to="/course"
                     className="nav-link pe-4"
                     aria-current="page"
                     activeclassname="active"
@@ -68,7 +68,7 @@ export default function NavBar() {
                       setHamShow(!HamShow);
                     }}
                   >
-                    Gallery
+                    Course
                   </NavLink>
                 </li>
                 {/* <li className="nav-item">
