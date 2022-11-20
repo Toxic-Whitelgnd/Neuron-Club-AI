@@ -2,4 +2,3 @@
 
 ## Website for Neuron Club Ai
 
-### Thanks the contributer of Tarun and Hari
