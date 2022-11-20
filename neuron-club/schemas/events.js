@@ -1,0 +1,41 @@
+export default {
+    name:'events',
+    title:'Events',
+    type:'document',
+
+    fields:[{
+        name:'image',
+        title:'Image',
+        type:'image',
+        options:{
+            hotspot:true,
+        },
+    },
+    {
+        name:'date',
+        title:'Date',
+        type:'string',
+    },
+    {
+        name:'time',
+        title:'Time',
+        type:'string',
+    },
+    {
+        name:'eventname',
+        title:'EventName',
+        type:'string',
+    },
+    {
+        name:'mode',
+        title:'Mode',
+        type:'string',
+
+    },
+    {
+        name:'place',
+        title:'Place',
+        type:'string',
+    }
+]
+}

@@ -1,0 +1,61 @@
+export default {
+    title:'Organizers',
+    name:'organizer',
+    type:'document',
+
+    fields:[{
+        name:'image',
+        title:'Image',
+        type:'image',
+        Options:{
+            hotspot: true
+        },
+    },
+    {
+        name:'name',
+        title:'Name',
+        type:'string',
+    },
+    {
+        name:'role',
+        title:'Role',
+        type:'string',
+
+    },
+    {
+        name:'slug',
+        title:'Slug',
+        type:'slug',
+        options:{
+            source:'name',
+            maxLength:90,
+        }
+    },
+    {
+        name:'description',
+        title:'Description',
+        type:'string',
+
+    },
+    {
+        name:'instagram',
+        title:'Intagram',
+        type:'url'
+    },
+    {
+        name:'linkedin',
+        title:'Linkedin',
+        type:'url',
+    },
+    {
+        name:'twitter',
+        title:'Twitter',
+        type:'url',
+    },
+    {
+        name:'phoneno',
+        title:'Phoneno',
+        type:'number',
+    }
+]
+}
