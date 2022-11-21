@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import Contact from "./components/Contact/contact"
 import Home from './components/home/home';
 import Course from './components/course/course';
+import Events from './components/events/events';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/about" index element={<AboutMe />}/>
             <Route path="/skills" index element={<Skills />}/>
             <Route path="/portfolio" index element={<Portfolio />}/> */}
+            <Route path="/events"  element={<Events/>}/>
             <Route path="/course"  element={<Course/>}/>
             <Route path="/contact"  element={<Contact />}/>
 

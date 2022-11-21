@@ -60,6 +60,19 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <NavLink
+                    to="/events"
+                    className="nav-link pe-4 "
+                    aria-current="page"
+                    activeclassname="active"
+                    onClick={() => {
+                      setHamShow(!HamShow);
+                    }}
+                  >
+                    Events
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
                     to="/course"
                     className="nav-link pe-4"
                     aria-current="page"
@@ -84,19 +97,7 @@ export default function NavBar() {
                     Achivements
                   </NavLink>
                 </li> */}
-                <li className="nav-item">
-                  <NavLink
-                    to="/events"
-                    className="nav-link pe-4 "
-                    aria-current="page"
-                    activeclassname="active"
-                    onClick={() => {
-                      setHamShow(!HamShow);
-                    }}
-                  >
-                    Events
-                  </NavLink>
-                </li>
+                
                 <li className="nav-item">
                   <NavLink
                     to="/organizers"
@@ -108,19 +109,6 @@ export default function NavBar() {
                     }}
                   >
                     Members
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    to="/course"
-                    className="nav-link pe-4"
-                    aria-current="page"
-                    activeclassname="active"
-                    onClick={() => {
-                      setHamShow(!HamShow);
-                    }}
-                  >
-                            Course
                   </NavLink>
                 </li>
                 <li className="nav-item">

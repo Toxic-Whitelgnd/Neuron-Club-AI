@@ -4,61 +4,61 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-body{
-  background-color: #f1f1f1;
-  color: black;
-}
-.container{
-  max-width: 1300px;
-  width: 100%;
-  margin: auto;
+.course-page{
+
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+  background-color:teal;
+
 }
 
-section{
-  min-height: 26vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-h1{
-  font-size: 50px;
-  line-height: 60px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.cards{
+.course-container{
+  margin:auto;
+  margin-left:10px;
+  max-width:80vm;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  
-}
-
-.card{
-  flex: 0 0 calc(33.33% - 20px);
-  max-width: calc(33.33% - 20px);
-  width: 100%;
-  background: rgb(214, 189, 189);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: -3s;
-  border: 2px solid transparent;
-}
-
-.card:hover{
-  border-color: #1d39c4;
-}
-.btn{
-  border: none;
-  outline: none;
-  background: #1d39c4;
-  color: #fff;
-  border-radius: 10px;
-  max-width: 120px;
-  width: 100%;
-  height: 40px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  
+
+}
+.course-card{
+  /* background-image: url("https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/10/python-1.jpg"); */
+  /* background-size: cover; */
+  margin-top:60px;
+  width:55%;
+  max-width:600px;
+  border-radius: 10px;
+  backdrop-filter:blur(20px);
+  box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+  border: solid 2px rgba(255,255,255,0.027);
+  color: white;
+  padding:20px;
+  margin-left:25px;
+}
+
+.course-img{
+  display:inline-flex;
+  width:150px;
+  height:150px;
+  border-radius: 1%;
+}
+.course-btn{
+  display:flex;
+  margin-bottom:20px;
+}
+#ct,#cd {
+  margin-top:1rem;
+  line-height:2rem;
+  letter-spacing:3px;
+}
+.jkr{
+  margin-right:20px;
+}
+@media only screen and (max-width:1024px){
+  .card{
+    width:90%;
+  }
 }

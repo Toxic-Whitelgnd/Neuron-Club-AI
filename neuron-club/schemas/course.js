@@ -23,10 +23,6 @@ export default {
         title:'Link',
         type:'url',
     },
-    {
-        name:'video',
-        title:'Course Video',
-        type:'mux.video'
-    }
+   
 ]
 }
