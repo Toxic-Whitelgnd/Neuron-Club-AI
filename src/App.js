@@ -6,6 +6,7 @@ import Contact from "./components/Contact/contact"
 import Home from './components/home/home';
 import Course from './components/course/course';
 import Events from './components/events/events';
+import Organizers from './components/Organizers/organizers';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/portfolio" index element={<Portfolio />}/> */}
             <Route path="/events"  element={<Events/>}/>
             <Route path="/course"  element={<Course/>}/>
+            <Route path="/organizers"  element={<Organizers/>}/>
             <Route path="/contact"  element={<Contact />}/>
 
 

@@ -40,7 +40,7 @@ export default {
     {
         name:'instagram',
         title:'Intagram',
-        type:'url'
+        type:'string'
     },
     {
         name:'linkedin',

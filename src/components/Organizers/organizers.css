@@ -1,0 +1,40 @@
+.org-container{
+    max-width:250px;
+    height:auto;
+    /* background-color:red; */
+    padding:10px;
+    margin:10px 0px 0px 30px;
+}
+.org-image{
+    width:150px;
+    border-radius:100px;
+    padding:10px;
+    height:150px;
+    object-fit:cover;
+}
+.org-details{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.ass{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.org-group{
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    column-gap: 50px; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}
+.tit{
+    text-align: center;
+}
