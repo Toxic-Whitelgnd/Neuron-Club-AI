@@ -7,6 +7,7 @@ import Home from './components/home/home';
 import Course from './components/course/course';
 import Events from './components/events/events';
 import Organizers from './components/Organizers/organizers';
+import Gallery from './components/Gallery/gallery';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" index element={<AboutMe />}/>
             <Route path="/skills" index element={<Skills />}/>
             <Route path="/portfolio" index element={<Portfolio />}/> */}
+            <Route path="/gallery"  element={<Gallery />}/>
             <Route path="/events"  element={<Events/>}/>
             <Route path="/course"  element={<Course/>}/>
             <Route path="/organizers"  element={<Organizers/>}/>

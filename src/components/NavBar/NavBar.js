@@ -47,7 +47,7 @@ export default function NavBar() {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/about"
+                    to="/gallery"
                     className="nav-link pe-4 "
                     aria-current="page"
                     activeclassname="active"
