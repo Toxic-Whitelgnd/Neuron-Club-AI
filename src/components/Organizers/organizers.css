@@ -11,6 +11,9 @@
     padding:10px;
     height:150px;
     object-fit:cover;
+    position:relative;
+    filter: drop-shadow(0.20rem 0.20rem 0.20rem rgba(0, 0, 0, 0.5));
+
 }
 .org-details{
     display:flex;
@@ -25,6 +28,13 @@
     justify-content:center;
     align-items:center;
 }
+.org-whole{
+    display:flex;
+    min-height:100vh;
+    background-color:#eff0f4;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .org-group{
     display: flex;
     margin: auto;
@@ -32,9 +42,137 @@
     column-gap: 50px; 
     justify-content: center;
     flex-wrap: wrap;
-
+    
     
 }
 .tit{
     text-align: center;
+}
+
+.org-container-test{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    padding:50px 0;
+    gap:40px 60px;
+}
+.org-container-test .org-drop{
+    position: relative;
+    width: 330px;
+    height: 380px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+}
+.org-container-test .org-drop:nth-child(1){
+    border-radius:51% 49% 50% 50% / 49% 48% 52% 51% ;
+}
+.org-container-test .org-drop:nth-child(2){
+    border-radius:46% 54% 30% 70% / 63% 38% 62% 37% ;
+}
+.org-container-test .org-drop:nth-child(3){
+    border-radius:46% 54% 30% 70% / 63% 38% 62% 37% ;
+}
+.org-container-test .org-drop:hover:{
+    border-radius:50%;
+}
+.org-profile {
+    position: relative;
+    padding: 8px 32px;
+    background: red;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 25px;
+    font-weight: 500;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.25);
+    opacity: 0.75;
+    transition: 0.5s;
+
+}
+.org-container-test .org-drop h2{
+    position: relative;
+    /* width: 80px; */
+    height: 60px;
+    /* background: #eff0f4; */
+    border-radius: 50%;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px Orgba(0,0,0,0.05),
+    15px 10px 15px rgba(0,0,0,0.025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    color: var(--clr);
+    
+}
+.org-profile:hover{
+    opacity:1;
+}
+.org-container-test .org-drop .org-content {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    top:50px;
+    /* left:85px; */
+    height:auto;
+    
+    text-align: center;
+    text-transform:capitalize;
+}
+
+/* for separate teams */
+.org-container-test .org-drop-design{
+    position: relative;
+    width: 330px;
+    height: 350px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}
+.org-container-test .org-drop-design .org-content {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    top:50px;
+    /* left:75px; */
+    height:auto;
+    
+    text-align: center;
+    text-transform:capitalize;
+}
+
+/* for coord team */
+/* for separate teams */
+.org-container-test .org-drop-coord{
+    position: relative;
+    width: 330px;
+    height: 370px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    border-radius:35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+.org-container-test .org-drop-coord .org-content {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    top:50px;
+    /* left:75px; */
+    height:auto;
+    
+    text-align: center;
+    text-transform:capitalize;
 }

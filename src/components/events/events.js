@@ -14,6 +14,7 @@ export default function Events() {
             time,
             mode,
             place,
+            _createdAt,
             image{
                 asset->{
                     _id,
@@ -21,7 +22,7 @@ export default function Events() {
                 },
                 alt
             }
-        }`)
+        } | order(_createdAt asc)`)
         .then((data)=> {seteventData(data)
         console.log(data)
         })
