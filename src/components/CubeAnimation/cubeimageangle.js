@@ -10,7 +10,7 @@ import myimg4 from "../../images/neuron.png"
 export default function CubeImage2Animation() {
   return (
     <div>
-        <div className='wrapper'>
+        <div className='wrapper-2'>
                 <div className='box-area1'>
                 <div className='box box-front'>
                     <img className='aboutk' alt='aboutkomali' src={myimg1}></img>

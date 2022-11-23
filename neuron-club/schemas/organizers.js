@@ -23,6 +23,11 @@ export default {
 
     },
     {
+        name:'email',
+        title:'Email',
+        type:'string',
+    },
+    {
         name:'teams',
         title:'Team',
         type:'string',

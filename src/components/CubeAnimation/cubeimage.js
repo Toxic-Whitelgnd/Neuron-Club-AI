@@ -12,7 +12,7 @@ import myimg6 from "../../images/6.JPG"
 export default function CubeImageAnimation() {
   return (
     <div>
-        <div className='wrapper'>
+        <div className='wrapper-1'>
                 <div className='box-area'>
                 <div className='box box-front'>
                     <img className='aboutk' alt='aboutkomali' src={myimg1}></img>
