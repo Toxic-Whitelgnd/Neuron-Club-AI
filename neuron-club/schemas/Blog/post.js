@@ -18,6 +18,11 @@ export default {
         },
       },
       {
+        name:'blogcaption',
+        title: 'Blog caption',
+        type:'string',
+      },
+      {
         name: 'author',
         title: 'Author',
         type: 'reference',
