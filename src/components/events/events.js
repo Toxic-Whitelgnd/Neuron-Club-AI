@@ -2,7 +2,8 @@ import React,{useState,useEffect} from 'react'
 import "../events/events.css"
 import {Client} from "../../lib/client"
 import img1 from  "../../images/neuron.png"
-import {CiTimer,CiLocationOn} from "react-icons/ci"
+import {TiLocation} from "react-icons/ti"
+import {RiTimeFill} from "react-icons/ri"
 import {MdOutlineModeStandby} from "react-icons/md"
 
 export default function Events() {
@@ -34,26 +35,31 @@ export default function Events() {
   return (
     <div>
         <div className="events-group">
-            {/* <div className='event-container'> */}
-            <div className="event-card">
+            
+            {eventData && eventData.map((event,ind)=>(
+                <div className='event-container' key={ind}>
+                <div className="event-card">
                 <div className='event-lines'>
                 </div>
                 <div className='event-imgBox'>
-                    <img src={img1} alt="clubevents" className='event-img' />
+                    <img src={event.image.asset.url} alt="clubevents" className='event-img' />
                 </div>
                 <div className='event-content'>
                     <div className='event-details'>
-                        <h2>Event Name<br></br><span>Date</span></h2>
+                        <h2>{event.eventname}<br></br><span>{event.date}</span></h2>
                         <div className='event-data'>
-                            <h3><CiTimer /><span>Time</span></h3>
-                            <h3><CiLocationOn /><span>Place</span></h3>
-                            <h3><MdOutlineModeStandby /><span>Mode</span></h3>
+                            <h3><RiTimeFill /><span>{event.time}</span></h3>
+                            <h3><TiLocation /><span>{event.place}</span></h3>
+                            <h3><MdOutlineModeStandby /><span>{event.mode}</span></h3>
                         </div>
                     </div>
                     
                 </div>
             </div>
-            {/* </div> */}
+            </div>
+
+            ))}
+            
             
             {/* need to map the data */}
             {/* {eventData && eventData.map((eventData,index) =>( 

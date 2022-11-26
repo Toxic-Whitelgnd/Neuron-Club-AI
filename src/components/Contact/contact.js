@@ -127,7 +127,7 @@ export default function Contact() {
 
                 {/* info */}
 
-                <div className='contactc info'>
+                <div className='contactc infoc'>
                     <h3 className='capitalize'>contact info</h3>
                     <div className='infobox'>
                         <div>
@@ -137,12 +137,12 @@ export default function Contact() {
 
                         <div>
                             <span><MdAlternateEmail /></span>
-                            <a href='mailto:akatsukiorganisation999@gmail.com' className='sm:text-xs'>neuron.club.ai@gmail.com</a>
+                            <a id="dd" href='mailto:akatsukiorganisation999@gmail.com' className='sm:text-xs'>neuron.club.ai@gmail.com</a>
                         </div>
 
                         <div>
                             <span><RiPhoneLine /></span>
-                            <a href='#'>+91 8610683202</a>
+                            <a id="dd" href='#'>+91 8610683202</a>
                         </div>
                     </div>
 

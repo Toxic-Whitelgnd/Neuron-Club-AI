@@ -84,7 +84,19 @@ export default function NavBar() {
                     Course
                   </NavLink>
                 </li>
-                
+                <li class="nav-item dropdown">
+                  <NavLink
+                    to="/blog"
+                    className="nav-link pe-4"
+                    aria-current="page"
+                    activeclassname="active"
+                    onClick={() => {
+                      setHamShow(!HamShow);
+                    }}
+                  >
+                    Blog
+                  </NavLink>
+                </li>
                 <li className="nav-item">
                   <NavLink
                     to="/organizers"

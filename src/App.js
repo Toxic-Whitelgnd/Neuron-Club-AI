@@ -9,6 +9,7 @@ import Events from './components/events/events';
 import Organizers from './components/Organizers/organizers';
 import Gallery from './components/Gallery/gallery';
 import Profile from './components/Organizers/profile';
+import Blog from './components/Blog/blog';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/gallery"  element={<Gallery />}/>
             <Route path="/events"  element={<Events/>}/>
             <Route path="/course"  element={<Course/>}/>
+            <Route path="/blog"  element={<Blog/>}/>
             <Route path="/organizers"  element={<Organizers/>}/>
             <Route path="/organizers/:slug"  element={<Profile />}/>
             <Route path="/contact"  element={<Contact />}/>
