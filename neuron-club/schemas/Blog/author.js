@@ -18,6 +18,26 @@ export default {
         },
       },
       {
+        name:'instagram',
+        title:'Intagram',
+        type:'string'
+      },
+      {
+          name:'linkedin',
+          title:'Linkedin',
+          type:'url',
+      },
+      {
+          name:'twitter',
+          title:'Twitter',
+          type:'url',
+      },
+      {
+          name:'email',
+          title:'Email',
+          type:'string',
+      },
+      {
         name: 'image',
         title: 'Image',
         type: 'image',

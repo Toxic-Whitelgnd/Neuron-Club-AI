@@ -12,6 +12,7 @@ import Profile from './components/Organizers/profile';
 import Blog from './components/Blog/blog';
 import BlogPage from './components/Blog/blogPage';
 import BlogPost from './components/Blog/BlogPost';
+import AuthorPage from './components/Blog/authorPage';
 
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/course"  element={<Course/>}/>
             <Route path="/blog"  element={<Blog/>}/>
             <Route path="/blog/:slug" element={<BlogPost/>}/>
+            <Route path="/blogauthor/:slug" element={<AuthorPage/>}/>
             <Route path="/organizers"  element={<Organizers/>}/>
             <Route path="/organizers/:slug"  element={<Profile />}/>
             <Route path="/contact"  element={<Contact />}/>

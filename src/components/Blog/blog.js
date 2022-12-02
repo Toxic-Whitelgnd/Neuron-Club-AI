@@ -16,6 +16,7 @@ export default function Blog() {
                 slug,
                 publishedAt,
                 "name": author -> name,
+                "authorslug": author -> slug,
                 "authimage": author -> image{
                     asset -> {
                         _id,
@@ -72,7 +73,7 @@ export default function Blog() {
             <img src={post.authimage.asset.url} className='auth-img' alt='dfd' />
             </div>
             
-            <a href='#' id="author">{post.name}</a>
+            <Link to={`/blogauthor/${post.authorslug.current}`} className='blog-btn'>{post.name}</Link>
         </div>
         <span id="calender">
         <SlCalender />
