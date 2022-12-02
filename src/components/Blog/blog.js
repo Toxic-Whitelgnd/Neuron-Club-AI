@@ -43,8 +43,8 @@ export default function Blog() {
         {/* runtime goes here */}
         {
             posts && posts.map((post,indx)=>(
-                <div>
-                    <div className="blog" style={{background:'url(https://cache.desktopnexus.com/thumbseg/25/25727-bigthumbnail.jpg) no-repeat',position: 'relative',
+                <div>jp
+                    <div className="blog" style={{background:`url(${post.mainImage.asset.url}) no-repeat`,position: 'relative',
                 width: '22em',
                 height: '30em',
                 backgroundSize:'22em 30em'}}>
@@ -92,3 +92,5 @@ export default function Blog() {
 </div>
   )
 }
+
+// https://cache.desktopnexus.com/thumbseg/25/25727-bigthumbnail.jpg
